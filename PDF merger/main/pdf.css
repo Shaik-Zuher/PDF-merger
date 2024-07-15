@@ -1,0 +1,90 @@
+*{
+    font-size: 50px;
+    box-sizing: border-box;
+    margin:0;
+}
+body{
+    background-color: #6ec2f7;
+}
+.head{
+    background-color:#2929cc;
+    text-align:center;
+    border-bottom:2px solid #6677cc;
+    border-radius: 2px;
+    padding: 0;
+    color:white;
+}
+p{
+    text-align: center;
+    font-size:30px;
+    margin:10px;
+}
+.form{
+    width:700px;
+    height:400px;
+    margin:40px auto 0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    background-color: #dadae6;
+    animation-name: glow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+label{
+    width:100%;
+    margin:10px;
+    padding:10px;
+    font-size:30px;
+    background-color:#6677cc;
+    color:white;
+    border-radius: 5px;
+}
+label:hover{
+    background-color: #2929cc;
+    transform: scale(10);
+}
+input[type='file']{
+    display: none;
+}
+input[type='submit']{
+    margin:20px;
+    font-size: 35px;;
+    width:150px;
+    border-radius: 4px;
+}
+#download{
+    margin-top: 15px;
+    border-radius:5px;
+    background-color: #6677cc;
+    width:250px;
+    color:rgba(255,255,255);
+}
+#download:hover{
+    background-color: #2929cc;
+}
+@keyframes glow{
+    0%{
+        border:5px solid #7aa1f0;
+    }
+    25%{
+        border:5px solid #2929cc;
+    }
+    50%{
+        border:5px solid #7aa1f0;
+    }
+    75%{
+        border:5px solid #2929cc;
+    }
+    100%{
+        border:5px solid #7aa1f0;
+    }
+}
+@media only screen and (max-width:600px){
+    .form{
+        width:400px;
+    }
+}
